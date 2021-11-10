@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     font-size: 18px;
+    box-sizing: border-box;
     /* font-family: 'Fraunces', serif; */
 }
 
@@ -29,7 +30,7 @@ li {
     list-style: none;
 }
 
-h1 {
+h1, h3 {
     font-family: 'Fraunces', serif;
 }
 
@@ -105,4 +106,172 @@ nav li a:active {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* main section */
+section.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cover {
+    width: 50%;
+}
+
+.passage {
+    width: 450px;
+    height: auto;
+    margin: 25% auto;
+    position: relative;
+    /* text-overflow: clip;
+    white-space: normal; */
+    /* word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
+}
+
+.passage h1 {
+    font-size: 40px;
+    color: var(--verydarkdesaturatedblue);
+}
+
+.passage p {
+    font-size: 18px;
+    color: var(--grayishblue);
+    font-weight: 600;
+    margin: 35px 0 45px;
+}
+
+.passage a {
+    font-family: 'Fraunces', serif;
+    color: var(--verydarkdesaturatedblue);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 4px;
+    bottom: 0;
+    z-index: 2;
+}
+
+.line {
+    width: 150px;
+    height: 9px;
+    border-radius: 5px;
+}
+
+.line.yellow {
+    background-color: hsla(51, 100%, 49%, 0.336);
+}
+
+.line.red {
+    background-color: hsla(7, 99%, 70%, 0.61);
+}
+
+.learnmore:hover .line.yellow {
+    background-color: var(--yellow);
+}
+
+.learnmore:hover .line.red {
+    background-color: var(--softred);
+}
+
+.cover.graphicdesign {
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.cover.graphicdesign.cherry {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.cover.graphicdesign.orange {
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+
+.fruit {
+    width: 350px;
+    text-align: center;
+    margin: 28vw auto;
+}
+
+.fruit h1 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.fruit p {
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.fruit.gd {
+    color: var(--darkdesaturatedcyan);
+}
+
+.fruit.photography {
+    color: var(--darkblue);
+}
+
+/* client section */
+section.client {
+    width: 100%;
+}
+
+section.client h1 {
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--grayishblue);
+    font-size: 18px;
+}
+
+.clientinfo {
+    width: 350px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 30px 70px;
+    column-gap: 50px;
+}
+.clientinfo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.clientinfo p {
+    margin: 50px 0;
+    color: var(--verydarkgrayishblue);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.clientinfo h3 {
+    color: var(--verydarkdesaturatedblue);
+    font-weight: 900;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.clientinfo small {
+    color: var(--darkgrayishblue);
+    font-size: 16px;
+    font-weight: 600;
 }
