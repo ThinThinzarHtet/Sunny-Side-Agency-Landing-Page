@@ -41,8 +41,8 @@ header {
     height: 100vh;
     background-image: url(./images/desktop/image-header.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
+    background-position: center bottom;
+    background-size: 100% 100%;
 }
 
 .heading {
@@ -50,6 +50,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 25px;
+}
+
+.hamburger {
+    display: none;
 }
 
 nav {
@@ -82,7 +86,7 @@ nav li a:active {
 
 .heading2 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 .heading2 h1 {
@@ -96,7 +100,7 @@ nav li a:active {
 .heading2 img {
     width: 25px;
     height: 90px;
-    margin-top: 4vw;
+    margin-top: 7%;
 }
 
 
@@ -120,7 +124,7 @@ section.main {
 }
 
 .passage {
-    width: 450px;
+    max-width: 450px;
     height: auto;
     margin: 25% auto;
     position: relative;
@@ -155,6 +159,10 @@ section.main {
     z-index: 2;
 }
 
+.learnmore {
+    position: relative;
+}
+
 .line {
     width: 150px;
     height: 9px;
@@ -178,6 +186,7 @@ section.main {
 }
 
 .cover.graphicdesign {
+    position: relative;
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,7 +204,10 @@ section.main {
 .fruit {
     width: 350px;
     text-align: center;
-    margin: 28vw auto;
+    /* left: 25%;
+    bottom: -70%; */
+    margin: 50% auto 0;
+
 }
 
 .fruit h1 {
@@ -205,7 +217,7 @@ section.main {
 
 .fruit p {
     font-weight: 600;
-    line-height: 150%;
+    line-height: 170%;
     margin-top: 30px;
     font-size: 15px;
 }
@@ -335,3 +347,112 @@ footer a:hover {
     color: var(--white);
 }
 
+@media only screen and (max-width: 800px) {
+    .heading img, .heading a {
+        margin-top: 3%;
+    }
+
+    .heading img {
+        width: 30%;
+    }
+    .heading2 h1 {
+        font-size: 70px;
+        margin-top: 20%;
+        letter-spacing: 10px;
+    }
+
+    .heading2 img {
+        width: 50px;
+        height: 150px;
+        margin-top: 15%;
+    }
+    
+    .hamburger{
+        display: inline-block;
+        text-align: right;
+        width: 20%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* main */
+    section.main {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .cover {
+        width: 100%;
+    }
+
+    .main :nth-child(1) {
+        order: 2;
+    }
+    .main :nth-child(2) {
+        order: 1;
+    }
+    .main :nth-child(3) {
+        order: 3;
+    }
+    .main :nth-child(4) {
+        order: 4;
+    }
+    .main :nth-child(5) {
+        order: 5;
+    }
+    .main :nth-child(6) {
+        order: 6;
+    }
+    .passage {
+        text-align: center;
+    }
+
+    .passage a {
+        letter-spacing: 1px;
+        position: relative;
+        left: 0;
+        bottom: -8px;
+        z-index: 2;
+    }
+    
+    .line {
+        margin: 0 auto;
+    }
+
+    .passage  {
+        max-width: 330px;
+    }
+
+    .passage p {
+        line-height: 150%;
+    }
+
+    /* graphic design and photography */
+    .cover.graphicdesign {
+        background-size: 100% 100%;
+    }
+
+    .fruit {
+        width: 350px;
+        text-align: center;
+        /* left: 25%;
+        bottom: -70%; */
+        margin: 70% auto 0;
+    
+    }
+    
+    .fruit h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    .fruit p {
+        font-weight: 600;
+        line-height: 170%;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
