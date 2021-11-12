@@ -128,10 +128,6 @@ section.main {
     height: auto;
     margin: 25% auto;
     position: relative;
-    /* text-overflow: clip;
-    white-space: normal; */
-    /* word-wrap: break-word; */
-    /* overflow-wrap: break-word; */
 }
 
 .passage h1 {
@@ -410,6 +406,26 @@ footer a:hover {
         text-align: center;
     }
 
+    .passage {
+        max-width: 400px;
+        height: auto;
+        margin: 25% auto;
+        position: relative;
+        
+    }
+
+    .passage h1 {
+        font-size: 40px;
+        color: var(--verydarkdesaturatedblue);
+    }
+    
+    .passage p {
+        font-size: 18px;
+        color: var(--grayishblue);
+        font-weight: 600;
+        margin: 35px 0 45px;
+    }
+
     .passage a {
         letter-spacing: 1px;
         position: relative;
@@ -455,6 +471,27 @@ footer a:hover {
         margin-top: 30px;
         font-size: 15px;
     }
+
+    /* client */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 45px 30px 70px;
+        row-gap: 50px;
+    }
+    section.photo {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .photo img {
+        width: 50%;
+        
+    }
+
 }
 @media only screen and (max-width: 600px){
 
@@ -478,5 +515,17 @@ footer a:hover {
 
     .heading2 img {
         margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .heading2 h1 {
+        font-size: 25px;
+    }
+
+    .heading2 img {
+        width: 15px;
+        height: 80px;
+        margin-top: 15%;
     }
 }
