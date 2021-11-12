@@ -105,7 +105,8 @@ nav li a:active {
 
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; text-align: center;
+    margin-bottom: 15px; 
 }
 
 .attribution a { 
@@ -456,7 +457,7 @@ footer a:hover {
         text-align: center;
         /* left: 25%;
         bottom: -70%; */
-        margin: 70% auto 0;
+        margin: 50% auto 0;
     
     }
     
@@ -506,6 +507,22 @@ footer a:hover {
         height: 100px;
         margin-top: 15%;
     }
+
+    .fruit {
+        width: 350px;
+        text-align: center;
+        /* left: 25%;
+        bottom: -70%; */
+        margin: 70% auto 0;
+    
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .fruit {
+        width: 300px;
+        margin: 90% auto 0;
+    }
 }
 
 @media only screen and (max-width: 400px){
@@ -515,7 +532,20 @@ footer a:hover {
 
     .heading2 img {
         margin-top: 10%;
+        height: 70px;
     }
+
+    .fruit {
+        width: 300px;
+        margin: 100% auto 0;
+    
+    }
+
+    /* client */
+    .clientinfo {
+        width: 300px;
+    }
+    
 }
 
 @media only screen and (max-width: 300px){
