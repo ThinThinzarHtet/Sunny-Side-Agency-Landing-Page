@@ -347,7 +347,7 @@ footer a:hover {
     color: var(--white);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .heading img, .heading a {
         margin-top: 3%;
     }
