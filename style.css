@@ -259,7 +259,7 @@ section.client h1 {
     justify-content: center;
     align-items: center;
     margin: 45px 30px 70px;
-    column-gap: 50px;
+    column-gap: 5%;
 }
 .clientinfo img {
     width: 80px;
@@ -347,7 +347,7 @@ footer a:hover {
     color: var(--white);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 800px) {
     .heading img, .heading a {
         margin-top: 3%;
     }
@@ -523,7 +523,8 @@ footer a:hover {
         justify-content: center;
         align-items: center;
         margin: 45px 30px 70px;
-        row-gap: 50px;
+        /* row-gap: 50px; */
+        row-gap: 2rem;
     }
     section.photo {
         width: 100%;
