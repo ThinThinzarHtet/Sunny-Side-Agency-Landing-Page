@@ -47,9 +47,12 @@ header {
 
 .heading {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 30px 25px;
+
+    position: relative;
 }
 
 .hamburger {
@@ -353,26 +356,57 @@ footer a:hover {
         width: 30%;
     }
     .heading2 h1 {
-        font-size: 70px;
-        margin-top: 15%;
+        font-size: 65px;
+        margin-top: 10%;
         letter-spacing: 10px;
     }
 
     .heading2 img {
         width: 50px;
-        height: 150px;
-        margin-top: 15%;
+        height: 130px;
+        margin-top: 10%;
     }
     
     .hamburger{
-        display: inline-block;
+        display: block;
         text-align: right;
         width: 20%;
     }
 
     nav {
         display: none;
+        width: 80%;
+        flex-direction: column;
+        row-gap: 30px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+
+        background-color: var(--white);
+        
+        margin-top: 12px;
+        padding: 35px 0;
+
+        position: absolute;
+        right: 3%;
+        top: 95%;
+        z-index: 2;
     }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav li a {
+        color: var(--darkgrayishblue);
+        font-weight: 600;
+    }
+
+    nav li a:hover {
+        background-color: var(--yellow);
+        color: var(--darkblue);
+    }
+
+    
 
     /* main */
     section.main {
@@ -525,7 +559,7 @@ footer a:hover {
 
 @media only screen and (max-width: 400px){
     .heading2 h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .heading2 img {
@@ -534,14 +568,14 @@ footer a:hover {
     }
 
     .fruit {
-        width: 300px;
+        width: 280px;
         margin: 100% auto 0;
     
     }
 
     /* client */
     .clientinfo {
-        width: 300px;
+        width: 280px;
     }
     
 }
