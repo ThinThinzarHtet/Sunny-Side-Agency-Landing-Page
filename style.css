@@ -583,7 +583,7 @@ footer a:hover {
 @media only screen and (max-width: 500px){
     .fruit {
         width: 300px;
-        margin: 90% auto 0;
+        margin: 80% auto 0;
     }
 }
 
